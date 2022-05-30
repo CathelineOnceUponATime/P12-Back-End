@@ -1,52 +1,51 @@
-# Project 9 - Front-end Dashboard
+![logo-du-projet](https://raw.githubusercontent.com/CathelineOnceUponATime/CathelineGrappin_12_10032022/main/src/assets/logo.png)
 
-This repo contains all the source code to run the micro API for the sports analytics dashboard SportSee.
+# SportSee
+> Projet 12 - Développez un tableau de bord d'analytics avec React
 
-## 1. General information
+## Author 
 
-To start this project, you are free to use Docker or not. In this documentation, we will see several methods to launch the project easily.
+- Catheline GRAPPIN
 
-## 2. Project (**without Docker**)
-
-### 2.1 Prerequisites
-
-- [NodeJS (**version 12.18**)](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/)
-
-If you are working with several versions of NodeJS, we recommend you install [nvm](https://github.com/nvm-sh/nvm). This tool will allow you to easily manage your NodeJS versions.
-
-### 2.2 Launching the project
-
-- Fork the repository
-- Clone it on your computer.
-- The `yarn` command will allow you to install the dependencies.
-- The `yarn dev` command will allow you to run the micro API.
+## Technologies
 
 
-## 3. Project (**with Docker**)
+## Environments
 
-### 2.1 Prerequisites
+https://github.com/CathelineOnceUponATime/P12-Back-End
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+## Resources provided
 
-### 2.2 Starting the project
+[![lien-maquette-Figma](https://raw.githubusercontent.com/CathelineOnceUponATime/CathelineGrappin_12_10032022/main/src/assets/maquette.png)](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
 
-- The `docker image build --no-cache -t micro-api .` command will allow you to build your image.
-- The `docker container run --name micro-api -p 3000:3000 -dt micro-api yarn` command will allow you to create your Docker container and run your image on port 3000.
-- The `docker container stop micro-api` command will allow you to stop your micro-api.
-- The `docker container rm micro-api` command will allow you to delete your micro-api container.
+[![lien-Kanban-SportSee](https://raw.githubusercontent.com/CathelineOnceUponATime/CathelineGrappin_12_10032022/main/src/assets/kanban.png)](https://www.notion.so/Tableau-de-bord-SportSee-6686aa4b5f44417881a4884c9af5669e)
 
-### 2.3 Vscode and container remotes
+## Installation
 
-Finally, if you have VsCode, you can easily launch your project in a docker environment.
+### Prerequisites
 
-You will need the [Remote Development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack). Once you have this extension installed, just click on the `Reopen in Container` button.
+- [![npm-v_7.24.1](https://img.shields.io/badge/npm-v_7.24.1-orange)](https://docs.npmjs.com/)
+- [![NodeJs-v_16.10.0](https://img.shields.io/badge/NodeJs-v_16.10.0-red)](https://nodejs.org/en/docs/)
 
-Once in the container, run the `yarn dev` command.
+- VSCode
 
-## 4. Endpoints
+### Installing and launching Back-End
 
-### 4.1 Possible endpoints
+Clone the repository of SportSee Back-End:
+
+`git clone https://github.com/CathelineOnceUponATime/P12-Back-End.git`
+
+Inside this back-end repository, install dependencies:
+
+`npm install`
+
+Launch back-end on port 3000 (default port):
+
+`npm run start`
+
+#### Endpoints
+
+##### Possible endpoints
 
 This project includes four endpoints that you will be able to use: 
 
@@ -58,7 +57,23 @@ This project includes four endpoints that you will be able to use:
 
 **Warning, currently only two users have been mocked. They have userId 12 and 18 respectively.**
 
-### 4.2 Examples of queries
+##### Examples of queries
 
 - `http://localhost:3000/user/12/performance` - Retrieves the performance of the user with id 12
 - `http://localhost:3000/user/18` - Retrieves user 18's main information.
+
+### Installing and launching Front-end
+
+Clone the repository of SportSee Front-End:
+
+`git clone https://github.com/CathelineOnceUponATime/CathelineGrappin_12_10032022.git`
+
+Inside this Front-End repository, install dependencies:
+
+`npm install`
+
+Lauch Front-End on port 3001:
+
+`npm start`
+
+Front-End is now rendered at URL `http://localhost:3001`
